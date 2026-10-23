@@ -1,0 +1,2 @@
+﻿run_id,case_id,prompt_version,model,context_relevance_score,faithfulness_score,answer_relevancy_score,citation_present,structure_valid,latency_seconds,evaluator_notes
+20261021_141337_594341,Q01,v1,gemma4:31b,1.00,1.00,1.00,true,true,5.434,"Piloto v1 limitado a Q01 (n=1): os três modelos e potências estão corretos, apoiados na fonte recuperada e citados. Não é média comparável do conjunto completo de oito casos."

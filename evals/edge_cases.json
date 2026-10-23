@@ -1,0 +1,41 @@
+{
+  "projeto": "EnergiaLar / EV Challenge GoodWe",
+  "sprint": 3,
+  "categoria": "edge_case",
+  "descricao": "Perguntas ambíguas ou com informação insuficiente, para verificar se o modelo pede contexto em vez de alucinar uma resposta específica.",
+  "casos": [
+    {
+      "id": "EC-01",
+      "tipo": "edge_case",
+      "pergunta": "Está dando erro.",
+      "resposta_esperada": "O assistente deve pedir mais contexto (qual equipamento, qual mensagem de erro, quando começou) em vez de inventar uma causa específica.",
+      "criterios": [
+        "Não afirma uma causa específica sem informação suficiente.",
+        "Pede esclarecimento sobre o equipamento ou o erro.",
+        "Permanece no escopo GoodWe/energia residencial.",
+        "Não inventa um estado de carregador específico."
+      ]
+    },
+    {
+      "id": "EC-02",
+      "tipo": "edge_case",
+      "pergunta": "Quanto vou pagar?",
+      "resposta_esperada": "Sem dados de consumo/tarifa informados, o assistente deve explicar que precisa do consumo (kWh) e do tipo de tarifa para calcular o valor, em vez de inventar um número.",
+      "criterios": [
+        "Não inventa um valor de faturamento.",
+        "Explica quais informações são necessárias para o cálculo.",
+        "faturamento_reais no schema deve vir como null, não um número chutado."
+      ]
+    },
+    {
+      "id": "EC-03",
+      "tipo": "edge_case",
+      "pergunta": "",
+      "resposta_esperada": "Pergunta vazia. O guardrail de escopo (src/guardrails/scope_validator.py) deve barrar antes mesmo de chamar o modelo, retornando a mensagem padrão de fora de escopo.",
+      "criterios": [
+        "Barrado pelo guardrail de escopo (texto vazio não contém termos GoodWe).",
+        "Não gera erro/exception na aplicação."
+      ]
+    }
+  ]
+}

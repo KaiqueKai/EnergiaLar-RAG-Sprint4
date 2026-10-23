@@ -1,0 +1,19 @@
+SPRINT 4 DO PROF. JORGE — ENERGIALAR + RAG
+
+Este ZIP é um projeto integrado de trabalho, com os módulos ativos da Sprint 3 do EnergiaLar preservados e a camada RAG acrescentada. Ele não é uma sobreposição. Não usa ChargeGrid/Lucas. O novo repositório GitHub só deve ser criado depois dos testes e da revisão final.
+
+1) Extraia o ZIP na Área de Trabalho e abra PowerShell na raiz do projeto.
+2) Instale sem precisar ativar scripts do PowerShell: `py -3.13 -m venv .venv`; `$py = ".\.venv\Scripts\python.exe"`; `& $py -m pip install --upgrade pip`; `& $py -m pip install -r requirements-dev.txt`.
+3) Só crie `.env` se não existir: `if (-not (Test-Path .env)) { Copy-Item .env.example .env }`; depois `notepad .env`. Nunca compartilhe/commite a chave.
+4) Compile e teste: `& $py -m compileall -q src evals app scripts tests`; `& $py -m pytest -q`.
+5) Para o caminho RAG executável, instalar/iniciar Ollama local para embeddings: instalar em https://ollama.com/download/windows, executar `& $py scripts/configurar_embeddings_locais.py` e depois `ollama pull nomic-embed-text`. O script altera somente as duas variáveis de embeddings e preserva chave/chat. O chat mantém `gemma4:31b` no Ollama Cloud. Isso é um desvio literal do requisito Cloud para embeddings porque o teste Cloud retornou 401 e a API pública não expõe embeddings; está documentado em `docs/COMPATIBILIDADE_EMBEDDINGS_CLOUD.md`.
+6) Testar endpoint e modelos: `& $py -m src.rag.check_setup`; `& $py -m src.rag.check_models`. Se o segundo modelo Cloud não estiver disponível, registrar o erro real e selecionar outro modelo listado que responda na conta, sem trocar o principal `gemma4:31b` sem motivo.
+7) Baixar PDFs originais: `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\baixar_manual_oficial.ps1`. Não altera a política permanente do Windows. Manual obrigatório; lista de compatibilidade complementar.
+8) Construir e verificar: `& $py -m src.rag.build_index --force`; `& $py -m streamlit run app/streamlit_app.py`. Testar perguntas com fonte, fora de escopo, segurança elétrica, preço didático, tarifa oficial e prompt injection.
+9) Piloto de avaliação (opcional; cria nova rodada se executado): `& $py -m evals.run_eval --mode iterations --model gemma4:31b --ids Q01 --interactive`. Cada resposta solicita qualidade do contexto, faithfulness e answer relevancy; use `evals/manual_rubric.md`.
+10) Avaliação completa (opcional; a matriz já existente não precisa ser refeita): `& $py -m evals.run_eval --mode iterations --model gemma4:31b --interactive`; `& $py -m evals.summarize_results --mode iterations`. Se v2 não melhorar, executar `& $py -m evals.run_eval --mode iterations --model gemma4:31b --prompts v2 v3 --interactive` e resumir novamente.
+11) Comparar dois modelos (reproduzir somente quando necessário; a matriz já registrada pode ser reutilizada): `& $py -m evals.run_eval --mode models --models gemma4:31b gpt-oss:20b --interactive`; `& $py -m evals.summarize_results --mode models`. Bônus opcional: comparar dois modelos com prompts v1/v2 (`--mode models --models gemma4:31b gpt-oss:20b --prompts v1 v2`); com oito casos são 32 combinações/calls.
+12) PDF: `& $py scripts/gerar_relatorio_evolucao.py`; o relatório atualizado usa as notas reais já registradas. As contribuições e a turma só devem ser preenchidas com dados confirmados; não inventar métricas.
+13) Segurança Git: `git check-ignore -v .env`; `git status --short`; `git diff --check`. Só criar/publicar novo repositório depois da validação, completar link GitHub, turma, nomes/RMs e tarefa real de cada integrante.
+
+Data de referência das fontes web incorporadas: 21/10/2026. As tarifas Enel SP estão identificadas com vigência indicada pela própria distribuidora a partir de 04/07/2026; antes de uso real, reconfirme a fatura e a distribuidora.

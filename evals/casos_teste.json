@@ -1,0 +1,84 @@
+{
+  "projeto": "GoodWe EV Challenge",
+  "sprint": 3,
+  "origem": "Casos de teste utilizados na Sprint 2",
+  "descricao": "Eval base reutilizado para comparação antes/depois da refatoração.",
+  "criterios_avaliacao": {
+    "adequada": "A resposta atende aos critérios essenciais do caso, permanece no domínio GoodWe/EV e não apresenta informações inventadas como fatos.",
+    "parcial": "A resposta atende parte dos critérios, mas apresenta omissões, informações pouco precisas ou problemas que não invalidam completamente a resposta.",
+    "inadequada": "A resposta não atende aos critérios principais, sai do escopo, apresenta informações incorretas relevantes ou ignora a pergunta."
+  },
+  "casos": [
+    {
+      "id": "EV-01",
+      "tipo": "happy_path",
+      "pergunta": "Como reduzir o consumo energético de uma estação de carregamento?",
+      "resposta_esperada": "A resposta deve apresentar estratégias relacionadas à eficiência energética de uma estação de carregamento, como gerenciamento de demanda, otimização da potência, programação de recarga, monitoramento do consumo e integração com fontes renováveis quando aplicável.",
+      "criterios": [
+        "Permanece no domínio de estações de carregamento e mobilidade elétrica.",
+        "Apresenta pelo menos duas estratégias relacionadas à eficiência energética.",
+        "Pode mencionar gerenciamento de carga, otimização de potência, horários de recarga, monitoramento ou fontes renováveis.",
+        "Não inventa especificações de produtos GoodWe que não tenham sido fornecidas.",
+        "Não apresenta valores exatos de economia como fatos sem base fornecida.",
+        "A resposta é coerente com a pergunta."
+      ]
+    },
+    {
+      "id": "EV-02",
+      "tipo": "happy_path",
+      "pergunta": "Quais indicadores devo monitorar diariamente?",
+      "resposta_esperada": "A resposta deve apresentar indicadores úteis para uma estação de carregamento, incluindo indicadores de potência, energia, estado dos carregadores, utilização, sessões, falhas e outros indicadores operacionais pertinentes.",
+      "criterios": [
+        "Permanece no contexto de operação de estações de carregamento.",
+        "Apresenta indicadores de desempenho dos carregadores.",
+        "Apresenta indicadores de consumo ou energia.",
+        "Apresenta pelo menos um indicador de utilização, sessões ou disponibilidade.",
+        "Pode incluir indicadores de falha ou manutenção.",
+        "Não inventa dados de uma estação específica."
+      ]
+    },
+    {
+      "id": "EV-03",
+      "tipo": "happy_path",
+      "pergunta": "Como prever falhas em carregadores elétricos?",
+      "resposta_esperada": "A resposta deve explicar que a previsão de falhas depende de dados históricos e operacionais e pode utilizar monitoramento de condições, detecção de anomalias, indicadores de alerta e modelos preditivos quando houver dados suficientes.",
+      "criterios": [
+        "Permanece no domínio de carregadores elétricos.",
+        "Reconhece a importância de dados históricos ou dados operacionais.",
+        "Apresenta monitoramento, detecção de anomalias ou análise de indicadores.",
+        "Pode mencionar aprendizado de máquina como abordagem possível.",
+        "Não afirma que uma falha futura pode ser prevista com certeza.",
+        "Não inventa sensores, dados ou especificações que não foram fornecidos."
+      ]
+    },
+    {
+      "id": "EV-04",
+      "tipo": "happy_path",
+      "pergunta": "Como melhorar a eficiência operacional da estação?",
+      "resposta_esperada": "A resposta deve apresentar ações de melhoria operacional relacionadas à gestão dos carregadores, utilização da infraestrutura, monitoramento, manutenção, gestão de demanda e experiência do usuário.",
+      "criterios": [
+        "Permanece no domínio de estações de carregamento.",
+        "Apresenta estratégias de melhoria operacional.",
+        "Pode mencionar gestão da potência ou demanda.",
+        "Pode mencionar monitoramento e manutenção.",
+        "Pode mencionar agendamento, disponibilidade ou gestão das sessões.",
+        "Não inventa recursos específicos de um produto GoodWe sem base."
+      ]
+    },
+    {
+      "id": "EV-05",
+      "tipo": "happy_path",
+      "pergunta": "Qual a importância da manutenção preventiva?",
+      "resposta_esperada": "A resposta deve explicar que a manutenção preventiva contribui para reduzir falhas e indisponibilidade, melhorar a confiabilidade dos equipamentos, identificar problemas antecipadamente e preservar a segurança e o desempenho operacional.",
+      "criterios": [
+        "Permanece no contexto de carregadores e estações elétricas.",
+        "Explica pelo menos dois benefícios da manutenção preventiva.",
+        "Pode mencionar redução de indisponibilidade.",
+        "Pode mencionar aumento da vida útil ou confiabilidade dos equipamentos.",
+        "Pode mencionar identificação antecipada de problemas.",
+        "Não fornece instruções elétricas perigosas para execução por leigos.",
+        "Não inventa requisitos regulatórios específicos sem base."
+      ]
+    }
+  ]
+}

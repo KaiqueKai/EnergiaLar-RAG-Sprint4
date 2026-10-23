@@ -1,0 +1,107 @@
+{
+  "mode": "models",
+  "input_files": [
+    "evals/results/avaliacao_models_20261021_211148_348705.csv"
+  ],
+  "generated_at": "2026-10-23T02:11:04",
+  "groups": [
+    {
+      "run_id": "20261021_211148_348705",
+      "prompt_version": "v2",
+      "model": "gemma4:31b",
+      "faithfulness_mean": 0.9062,
+      "answer_relevancy_mean": 0.9062,
+      "faithfulness_count": 8,
+      "answer_relevancy_count": 8,
+      "context_relevance_mean": 0.8571,
+      "context_relevance_count": 7,
+      "citation_coverage": 1.0,
+      "citation_evaluated_count": 7,
+      "mean_latency_seconds": 3.878,
+      "rows": 8,
+      "errors": 0,
+      "structure_valid_count": 8,
+      "structure_valid_total": 8,
+      "structure_failures": 0,
+      "context_relevance_audited": true
+    },
+    {
+      "run_id": "20261021_211148_348705",
+      "prompt_version": "v2",
+      "model": "gpt-oss:20b",
+      "faithfulness_mean": 0.5938,
+      "answer_relevancy_mean": 0.5938,
+      "faithfulness_count": 8,
+      "answer_relevancy_count": 8,
+      "context_relevance_mean": 0.8571,
+      "context_relevance_count": 7,
+      "citation_coverage": 0.5714,
+      "citation_evaluated_count": 7,
+      "mean_latency_seconds": 7.403,
+      "rows": 8,
+      "errors": 0,
+      "structure_valid_count": 5,
+      "structure_valid_total": 8,
+      "structure_failures": 3,
+      "context_relevance_audited": true
+    },
+    {
+      "run_id": "20261021_211148_348705",
+      "prompt_version": "v3",
+      "model": "gemma4:31b",
+      "faithfulness_mean": 1.0,
+      "answer_relevancy_mean": 1.0,
+      "faithfulness_count": 8,
+      "answer_relevancy_count": 8,
+      "context_relevance_mean": 0.8571,
+      "context_relevance_count": 7,
+      "citation_coverage": 1.0,
+      "citation_evaluated_count": 7,
+      "mean_latency_seconds": 3.781,
+      "rows": 8,
+      "errors": 0,
+      "structure_valid_count": 8,
+      "structure_valid_total": 8,
+      "structure_failures": 0,
+      "context_relevance_audited": true
+    },
+    {
+      "run_id": "20261021_211148_348705",
+      "prompt_version": "v3",
+      "model": "gpt-oss:20b",
+      "faithfulness_mean": 0.75,
+      "answer_relevancy_mean": 0.75,
+      "faithfulness_count": 8,
+      "answer_relevancy_count": 8,
+      "context_relevance_mean": 0.8571,
+      "context_relevance_count": 7,
+      "citation_coverage": 0.7143,
+      "citation_evaluated_count": 7,
+      "mean_latency_seconds": 6.92,
+      "rows": 8,
+      "errors": 0,
+      "structure_valid_count": 6,
+      "structure_valid_total": 8,
+      "structure_failures": 2,
+      "context_relevance_audited": true
+    }
+  ],
+  "iteration_deltas": [
+    {
+      "run_id": "20261021_211148_348705",
+      "model": "gemma4:31b",
+      "comparison": "v3-v2",
+      "faithfulness_delta": 0.0938,
+      "answer_relevancy_delta": 0.0938,
+      "context_relevance_delta": 0.0
+    },
+    {
+      "run_id": "20261021_211148_348705",
+      "model": "gpt-oss:20b",
+      "comparison": "v3-v2",
+      "faithfulness_delta": 0.1562,
+      "answer_relevancy_delta": 0.1562,
+      "context_relevance_delta": 0.0
+    }
+  ]
+}

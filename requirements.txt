@@ -1,0 +1,16 @@
+# Base preservada da Sprint 3: LangChain/LCEL, Ollama Cloud e Pydantic v2
+langchain==1.4.0
+langchain-core>=1.2,<2.0
+langchain-ollama>=1.0,<2.0
+pydantic>=2.0,<3.0
+tiktoken>=0.8,<1.0
+
+# Sprint 4: pipeline documental RAG e interface obrigatória
+langchain-community>=0.4,<1.0
+langchain-text-splitters>=1.0,<2.0
+langchain-chroma>=1.0,<2.0
+chromadb>=1.0,<2.0
+pymupdf>=1.24,<2.0
+python-dotenv>=1.0,<2.0
+streamlit>=1.40,<2.0
+reportlab>=4.0,<5.0

@@ -1,0 +1,13 @@
+ENERGIALAR — SPRINT 4 — ARQUIVOS DE ENTREGA
+
+1. ENTREGA_SPRINT4.txt: integrantes/RMs, turma para confirmar e link do repositório para preencher após criá-lo.
+2. docs/relatorio_evolucao_sprint4.pdf: relatório de evolução, até cinco páginas.
+3. colab/EnergiaLar_Sprint4_Colab.ipynb: demonstração complementar com embeddings no runtime cloud do Colab e chat Ollama Cloud.
+4. docs/relatorio_modelos.md e evals/results/: parâmetros, scores manuais, evidências e respostas/contextos originais.
+5. docs/COMPATIBILIDADE_EMBEDDINGS_CLOUD.md: limitações da API de embeddings Ollama Cloud e alternativa Colab.
+
+IMPORTANTE: a avaliação manual da v1 foi completada para Q01-Q08 (run_id 20261023_003912_871419): faithfulness/relevância 0,938/0,938, contexto 1,000 em 7 casos aplicáveis, citações 7/7 e JSON válido 8/8. V1→v2 caiu 0,031 e v2→v3 subiu +0,094 em faithfulness e relevância. Os scores são fallback manual, não RAGAS.
+
+IMPORTANTE: a turma está como campo a confirmar no Portal FIAP. O link público do repositório Sprint 4 também precisa ser preenchido. A divisão não atribui tarefas concluídas a membros sem confirmação: a implementação desta versão é registrada como feita por Kaique, e as revisões sugeridas aos demais estão marcadas como pendentes.
+
+Limitação Cloud: o notebook Colab executa o encoder Nomic dentro do runtime hospedado do Colab; o chat usa Ollama Cloud. Isto não é o endpoint gerenciado de embeddings do Ollama Cloud.

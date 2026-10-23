@@ -1,0 +1,83 @@
+﻿run_id,case_id,category,question,question_used_after_security_filter,security_events,expected_points,expected_source,prompt_version,model,temperature,top_p,max_tokens,top_k,min_relevance_score,latency_seconds,source_count,structure_valid,answer,sources,retrieved_context,context_relevance_score,faithfulness_score,answer_relevancy_score,citation_present,evaluator_notes,error
+20261021_134906_437471,Q01,in_scope,Quais potências nominais aparecem para os modelos HCA G2 listados na base?,Quais potências nominais aparecem para os modelos HCA G2 listados na base?,,GW7K-HCA-20: 7 kW | GW11K-HCA-20: 11 kW | GW22K-HCA-20: 22 kW,00_manual_oficial_goodwe_hca_g2_en.pdf ou 01_folha_dados_hca_g2.md ou 02_faq_energialar_recarga.md,v1,gemma4:31b,0.0,0.9,600,4,0.15,5.479,2,True,"As potências nominais de saída para os modelos HCA G2 listados são: 7.000 W (7 kW) para o modelo GW7K-HCA-20, 11.000 W (11 kW) para o modelo GW11K-HCA-20 e 22.000 W (22 kW) para o modelo GW22K-HCA-20 [1].
+
+Fontes consultadas: [1] 01_folha_dados_hca_g2.md (sem paginação); [2] 03_condominio_protocolo_orientativo.md (sem paginação)",[1] 01_folha_dados_hca_g2.md (sem paginação) | [2] 03_condominio_protocolo_orientativo.md (sem paginação),"[1] 01_folha_dados_hca_g2.md (sem paginação)
+## Modelos e dados nominais publicados
+
+| Modelo | Potência nominal de saída | Tensão nominal de entrada | Tensão nominal de saída | Corrente nominal de saída |
+|---|---:|---:|---:|---:|
+| GW7K-HCA-20 | 7.000 W (7 kW) | 230 V, L / N / PE | 230 V | 32 A |
+| GW11K-HCA-20 | 11.000 W (11 kW) | 400 V, 3L / N / PE | 400 V | 16 A |
+| GW22K-HCA-20 | 22.000 W (22 kW) | 400 V, 3L / N / PE | 400 V | 32 A |
+
+A linha HCA G2 é apresentada pela GoodWe como carregador CA monofásico de 7 kW e trifásico de 11/22 kW. A página do fabricante descreve integração com inversor e bateria do sistema fotovoltaico, modos de carregamento configuráveis pelo aplicativo SEMS+ e diferentes métodos de autenticação.
+
+---
+
+[2] 03_condominio_protocolo_orientativo.md (sem paginação)
+## Fonte e limite de aplicação
+
+Manual do usuário GoodWe HCA G2 (consultar modelo e revisão atuais): https://br.goodwe.com/Api/downloadFile?id=2496&mid=60&type=2
+
+Página oficial da linha HCA G2: https://br.goodwe.com/carregadores-hca-g2-goodwe
+
+Este modelo orienta a organização do processo; não afirma que cada item seja obrigação legal universal. A equipe deve validar normas locais e a convenção/regimento aplicável antes de uso real.
+
+---
+
+[1] 01_folha_dados_hca_g2.md (sem paginação)
+# Dados publicados — carregadores GoodWe HCA G2
+
+**Tipo de fonte:** resumo de consulta produzido para indexação acadêmica a partir de páginas oficiais GoodWe. **Não é manual oficial nem substitui o arquivo original do fabricante.**
+
+---
+
+[1] 01_folha_dados_hca_g2.md (sem paginação)
+## Fontes primárias do fabricante
+
+- Página oficial GoodWe Brasil — Linha HCA G2: https://br.goodwe.com/carregadores-hca-g2-goodwe
+- Folha de dados da série HCA G2 (arquivo hospedado no domínio oficial GoodWe): https://br.goodwe.com/Api/downloadFile?id=3931&mid=60&type=1
+- Manual oficial HCA G2 em inglês, listado na página de downloads da GoodWe Brasil: https://br.goodwe.com/Api/downloadFile?id=2496&mid=60&type=2
+
+**Consulta das fontes:** 21/10/2026. Os dados podem mudar; antes de qualquer decisão técnica, use o manual e a documentação vigentes do modelo exato.",,,,true,,
+20261021_134906_437471,Q01,in_scope,Quais potências nominais aparecem para os modelos HCA G2 listados na base?,Quais potências nominais aparecem para os modelos HCA G2 listados na base?,,GW7K-HCA-20: 7 kW | GW11K-HCA-20: 11 kW | GW22K-HCA-20: 22 kW,00_manual_oficial_goodwe_hca_g2_en.pdf ou 01_folha_dados_hca_g2.md ou 02_faq_energialar_recarga.md,v2,gemma4:31b,0.0,0.9,600,4,0.15,4.06,2,True,"As potências nominais de saída para os modelos HCA G2 listados são: 7 kW para o modelo GW7K-HCA-20, 11 kW para o modelo GW11K-HCA-20 e 22 kW para o modelo GW22K-HCA-20 [1].
+
+Fontes consultadas: [1] 01_folha_dados_hca_g2.md (sem paginação); [2] 03_condominio_protocolo_orientativo.md (sem paginação)",[1] 01_folha_dados_hca_g2.md (sem paginação) | [2] 03_condominio_protocolo_orientativo.md (sem paginação),"[1] 01_folha_dados_hca_g2.md (sem paginação)
+## Modelos e dados nominais publicados
+
+| Modelo | Potência nominal de saída | Tensão nominal de entrada | Tensão nominal de saída | Corrente nominal de saída |
+|---|---:|---:|---:|---:|
+| GW7K-HCA-20 | 7.000 W (7 kW) | 230 V, L / N / PE | 230 V | 32 A |
+| GW11K-HCA-20 | 11.000 W (11 kW) | 400 V, 3L / N / PE | 400 V | 16 A |
+| GW22K-HCA-20 | 22.000 W (22 kW) | 400 V, 3L / N / PE | 400 V | 32 A |
+
+A linha HCA G2 é apresentada pela GoodWe como carregador CA monofásico de 7 kW e trifásico de 11/22 kW. A página do fabricante descreve integração com inversor e bateria do sistema fotovoltaico, modos de carregamento configuráveis pelo aplicativo SEMS+ e diferentes métodos de autenticação.
+
+---
+
+[2] 03_condominio_protocolo_orientativo.md (sem paginação)
+## Fonte e limite de aplicação
+
+Manual do usuário GoodWe HCA G2 (consultar modelo e revisão atuais): https://br.goodwe.com/Api/downloadFile?id=2496&mid=60&type=2
+
+Página oficial da linha HCA G2: https://br.goodwe.com/carregadores-hca-g2-goodwe
+
+Este modelo orienta a organização do processo; não afirma que cada item seja obrigação legal universal. A equipe deve validar normas locais e a convenção/regimento aplicável antes de uso real.
+
+---
+
+[1] 01_folha_dados_hca_g2.md (sem paginação)
+# Dados publicados — carregadores GoodWe HCA G2
+
+**Tipo de fonte:** resumo de consulta produzido para indexação acadêmica a partir de páginas oficiais GoodWe. **Não é manual oficial nem substitui o arquivo original do fabricante.**
+
+---
+
+[1] 01_folha_dados_hca_g2.md (sem paginação)
+## Fontes primárias do fabricante
+
+- Página oficial GoodWe Brasil — Linha HCA G2: https://br.goodwe.com/carregadores-hca-g2-goodwe
+- Folha de dados da série HCA G2 (arquivo hospedado no domínio oficial GoodWe): https://br.goodwe.com/Api/downloadFile?id=3931&mid=60&type=1
+- Manual oficial HCA G2 em inglês, listado na página de downloads da GoodWe Brasil: https://br.goodwe.com/Api/downloadFile?id=2496&mid=60&type=2
+
+**Consulta das fontes:** 21/10/2026. Os dados podem mudar; antes de qualquer decisão técnica, use o manual e a documentação vigentes do modelo exato.",,,,true,,

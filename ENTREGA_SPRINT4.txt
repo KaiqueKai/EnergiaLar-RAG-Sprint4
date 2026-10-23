@@ -1,0 +1,19 @@
+FIAP — Prompt and Artificial Intelligence — Sprint 04
+Projeto: EnergiaLar — evolução da Sprint 3 com pipeline RAG
+Professor: Jorge Luiz Gomes
+Curso: Ciência da Computação — 2º semestre — 2026.2
+Turma: [PREENCHER O CÓDIGO EXATO CONFORME O PORTAL FIAP]
+
+REPOSITÓRIO
+Projeto-base Sprint 3: https://github.com/KaiqueKai/EnergiaLar
+Repositório público Sprint 4: PREENCHER APÓS CRIAR E VALIDAR O REPOSITÓRIO
+
+INTEGRANTES
+1. Kaique Da Silva Assis — RM 572718
+2. Andre Debiazzi Baldi Negrini — RM 569062
+3. Vinicius Cristal de Oliveira — RM 572049
+4. Lucas Barros — RM 571528
+5. Renan Eskildssen — RM 571097
+
+NOTA DE TRANSPARÊNCIA SOBRE A CONTRIBUIÇÃO
+A implementação técnica e a avaliação descritas no pacote foram realizadas por Kaique Da Silva Assis. A revisão por outros integrantes está prevista, mas não foi confirmada como concluída no momento de geração deste arquivo. Não atribuir tarefas como concluídas sem validação dos integrantes.

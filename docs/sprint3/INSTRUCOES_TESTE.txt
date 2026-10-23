@@ -1,0 +1,25 @@
+ORDEM OFICIAL DE TESTE — SPRINT 3
+
+1. Na raiz do projeto:
+   python -m pytest
+
+2. Depois:
+   python -m evals.run_baseline
+
+3. Depois:
+   python -m evals.model_comparison
+
+4. Por fim:
+   python -m evals.comparar_sprint2_sprint3
+
+5. Para demonstração manual:
+   python main.py
+
+MODELOS CLOUD:
+- gemma4:31b-cloud
+- gpt-oss:120b-cloud
+
+NÃO BAIXAR MODELOS LOCAIS.
+
+OBSERVAÇÃO:
+Se um modelo Cloud estiver sem créditos ou indisponível na conta, o avaliador registra o erro e continua os demais testes. O problema de acesso ao serviço não deve quebrar o restante do script.

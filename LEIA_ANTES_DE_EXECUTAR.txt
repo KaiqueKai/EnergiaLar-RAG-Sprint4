@@ -1,0 +1,15 @@
+ENERGIALAR — SPRINT 4 COMPLETA (PROFESSOR JORGE)
+
+Esta é uma pasta integrada, com a base conversacional da Sprint 3 e os módulos RAG da Sprint 4. Não aplique outros patches/ZIPs em cima deste pacote e não crie o novo repositório GitHub ainda.
+
+ORDEM DE EXECUÇÃO
+1. Leia README.md.
+2. Instale dependências seguindo a seção 1 do README.
+3. Configure o .env preservando a chave (nunca compartilhe a chave).
+4. Execute compileall e pytest.
+5. Configure o embedding nomic-embed-text local, mantendo gemma4:31b no Ollama Cloud; a divergência literal com a linha Cloud do enunciado está documentada em docs/COMPATIBILIDADE_EMBEDDINGS_CLOUD.md.
+6. Baixe o manual oficial GoodWe com o script indicado no README; o manual real não é substituído por resumo Markdown.
+7. Valide embeddings/chat, crie o índice persistente ChromaDB, abra a interface e execute avaliações.
+8. Atualize o relatório PDF com scores reais e confirme as tarefas dos cinco integrantes. Somente depois dos testes e revisão final crie o novo repositório.
+
+A chave .env não faz parte deste ZIP. Não inclua .env no Git. Veja TESTES_E_COMANDOS.md para os comandos.

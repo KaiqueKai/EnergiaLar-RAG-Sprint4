@@ -1,0 +1,20 @@
+"""Busca semântica com limiar mínimo de relevância."""
+from .settings import TOP_K, MIN_RELEVANCE_SCORE
+
+
+def retrieve_context(question: str, vector_store, top_k: int | None = None, min_score: float | None = None):
+    question = (question or "").strip()
+    if not question:
+        return []
+    k = TOP_K if top_k is None else max(1, int(top_k))
+    threshold = MIN_RELEVANCE_SCORE if min_score is None else float(min_score)
+    matches = vector_store.similarity_search_with_relevance_scores(question, k=k)
+    selected = []
+    for doc, score in matches:
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            continue
+        if score >= threshold:
+            selected.append((doc, score))
+    return selected

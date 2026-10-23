@@ -1,0 +1,5 @@
+﻿item,valor,unidade,classe,observacao,fonte
+Energia fora de pico (cenário didático),0.85,R$/kWh,SIMULADO,Valor artificial para testar cálculo; não representa tarifa oficial,Exemplo acadêmico da própria base
+Energia em horário de pico (cenário didático),1.05,R$/kWh,SIMULADO,Valor artificial para testar cálculo; não representa tarifa oficial,Exemplo acadêmico da própria base
+Tarifa real de energia,Consultar fatura,R$/kWh,NAO_HARDCODEAR,"Para valor real, confirmar distribuidora, categoria, modalidade e fatura; Enel SP é apenas uma referência localizada, não universal.",https://www.enel.com.br/pt-saopaulo/Para_Voce/tarifa-energia-eletrica.html
+Bandeiras e componentes tarifários,Consultar página vigente,referência,NAO_HARDCODEAR,Consultar fonte vigente da distribuidora e ANEEL na data de uso; não reutilizar valor antigo como se fosse vigente.,https://www.gov.br/aneel/pt-br
